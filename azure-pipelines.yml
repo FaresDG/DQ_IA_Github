@@ -2,7 +2,7 @@
 trigger:
   branches:
     include:
-      - branch1
+      - Branch_one
 
 # 2) Validation PR vers main
 pr:
