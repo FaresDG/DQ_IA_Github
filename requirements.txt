@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+apache-airflow
+great_expectations
+loguru
+flake8
