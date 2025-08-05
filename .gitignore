@@ -1,0 +1,115 @@
+##################################################
+# Environnements Python
+##################################################
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.env
+.env.*
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+##################################################
+# Great Expectations
+##################################################
+great_expectations/uncommitted/
+
+##################################################
+# Apache Airflow
+##################################################
+# Config, DB, logs
+airflow.cfg
+airflow.db
+logs/
+*.log
+
+# Compiled DAGs
+dags/__pycache__/
+
+##################################################
+# Microsoft Fabric / Data Lake credentials
+##################################################
+# Ne jamais versionner les credentials / tokens
+*.json
+*credentials*
+*token*
+*.key
+
+##################################################
+# Fichiers de données générés / temporaires
+##################################################
+*.csv
+*.parquet
+*.avro
+*.delta
+tmp/
+temp/
+*.tmp
+
+##################################################
+# Terraform
+##################################################
+# État et cache
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+
+# Variables sensibles
+terraform.tfvars
+terraform.tfvars.json
+
+##################################################
+# Docker
+##################################################
+# Images construites localement
+docker-compose.override.yml
+docker-compose.local.yml
+**/Dockerfile.*.local
+
+##################################################
+# Power BI
+##################################################
+# Fichiers de projet / rapports
+*.pbix
+*.pbit
+
+##################################################
+# Jupyter Notebook
+##################################################
+.ipynb_checkpoints/
+
+##################################################
+# IDEs & éditeurs
+##################################################
+# VS Code
+.vscode/
+
+# JetBrains (PyCharm, IntelliJ)
+.idea/
+
+##################################################
+# Système
+##################################################
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs généraux
+*.log
+*.out
+*.err
