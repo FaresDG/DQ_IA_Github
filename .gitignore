@@ -49,7 +49,7 @@ dags/__pycache__/
 # Fichiers de données générés / temporaires
 ##################################################
 *.csv
-*.docx
+
 *.parquet
 *.avro
 *.delta
