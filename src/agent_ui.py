@@ -6,15 +6,9 @@ from typing import Optional
 
 from loguru import logger
 
-try:  # Les dépendances Azure peuvent être absentes dans l'environnement local.
-    from azure.ai.projects import AIProjectClient
-    from azure.identity import DefaultAzureCredential
-    from azure.ai.agents.models import ListSortOrder
-except Exception as exc:  # pragma: no cover - fallback silencieux
-    AIProjectClient = None  # type: ignore[assignment]
-    DefaultAzureCredential = None  # type: ignore[assignment]
-    ListSortOrder = None  # type: ignore[assignment]
-    logger.warning("Azure SDK non disponible: %s", exc)
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+from azure.ai.agents.models import ListSortOrder
 
 from dotenv import load_dotenv
 import os
@@ -27,9 +21,6 @@ def _init_client() -> tuple[
     Optional[AIProjectClient], Optional[str], Optional[str]
 ]:
     """Initialise le client Azure et retourne projet/agent/thread."""
-    if AIProjectClient is None:
-        return None, None, None
-
     try:
         project = AIProjectClient(
             credential=DefaultAzureCredential(),
