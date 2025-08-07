@@ -1,10 +1,12 @@
 from datetime import datetime
+
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 
-def hello_world():
+def hello_world() -> None:
     print("Hello from Airflow")
+
 
 with DAG(
     dag_id="example_dag",
