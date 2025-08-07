@@ -3,6 +3,7 @@ uvicorn[standard]
 apache-airflow
 great_expectations
 loguru
+requests
 flake8
 streamlit
 python-dotenv
