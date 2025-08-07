@@ -20,8 +20,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     main()
-=======
-    main()
->>>>>>> 14e1875e0cd9b7d21f561ef8ab1381919bd2f2a6

@@ -5,3 +5,4 @@ great_expectations
 loguru
 flake8
 streamlit
+dotenv
